@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh9v9QVkH5mEASPFA6RRYmAP7lURX-7pflvz3v8tMeLhrpsH9t88xBsUeT2Yy0HABiXB6iuFdzQ2ZbAiUM31B_C8a5pxmuKIA7ZtHLU_T-o8eaAEeE-9R-lQGg75q3lAnDb3Jq1BtKQuTzK75HSNKKCpXp-BzFh-LpYNiTUUHcFq6LaaXvRGZzyCHjxqQe9/s1913/Screenshot%202024-12-07%20213125.png' property='og:image'/>
+    <link rel="icon" href="https://yt3.googleusercontent.com/BmMSg3FQ72SfBfceNebsMk0LLwXkPVGYjtWq_67Ti1_iNU8ZO812dZuiTKeB4VKXpOgSBkysqQ=s176-c-k-c0x00ffffff-no-rj" type="image/x-icon">
+    <title>Tahir Naseer</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .errorMessage{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            border-radius: 13px;
+            padding: 12px;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+        .error-image{
+            height: 140px;
+            width: 140px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+        .error-image img{
+            border-radius: 50%;
+            height: 130px;
+        }
+        .errorMessage h1{
+            text-align: center;
+            font-weight: 100;
+            font-size: 40px;
+            width: 100%;
+            left: 48px;
+            color: rgba(0,0,0,0.9);
+        }
+        .errorMessage p{
+            text-align: center;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 24px;
+            color: rgba(0,0,0,0.6);
+        }
+        .errorMessage p a{
+            color: var(--link);
+        }
+        .errorMessage button{
+            outline: none;
+            border: none;
+            border-radius: 6px;
+            background-color: var(--link);
+            box-shadow: var(--box-shadow);
+            margin-block: 6px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .errorMessage button a{
+            padding-block: 12px;
+            line-height: 32px;
+            padding-inline: 12px;
+            color: #fff;
+        }
+        @media (width <= 850px) {
+            .errorMessage{
+                width: 90%;
+                margin: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="errorMessage" >
+        <div class="error-image">
+            <img src="https://yt3.googleusercontent.com/BmMSg3FQ72SfBfceNebsMk0LLwXkPVGYjtWq_67Ti1_iNU8ZO812dZuiTKeB4VKXpOgSBkysqQ=s176-c-k-c0x00ffffff-no-rj" alt="">
+        </div>
+        <h1>Page not found </h1>
+        <p id="auto-underline">Uh oh, we can’t seem to find the page you’re looking for. Try going back to the previous page or see my <a href="https://imtahirnaseer.github.io/Portfolio/#contact">Contact Page</a> for more information</p>
+        <button> <a href="https://imtahirnaseer.github.io/Portfolio/">Go Back to Home</a></button>
+    </div>
+</body>
+</html>
