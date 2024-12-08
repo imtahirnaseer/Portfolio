@@ -1,6 +1,6 @@
 # 💼 Tahir Naseer - Portfolio  
 
-![Portfolio Banner](https://github.com/imtahirnaseer/Portfolio/blob/1ef18f4d46684d23815d617ed78f6b35d4927d85/Screenshot%202024-12-07%20213125.png) 
+![Portfolio Banner](https://github.com/imtahirnaseer/Portfolio/blob/5e4c9d576c9d8e01643513e6fbda7209326a751b/Screen%20Recording%202024-12-08%20141202.gif) 
 
 Welcome to my GitHub portfolio! 🚀 I'm a passionate **Computer Science Engineer** pursuing my degree at **Baba Ghulam Shah Badshah University (BGSBU)**. I enjoy crafting innovative projects, solving challenging problems, and bringing creative ideas to life through code.  
 
