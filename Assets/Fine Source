@@ -1,1 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Dashboard</title>
+  <style>
+    /* General body styling */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
 
+    /* Dashboard container */
+    .dashboard-container {
+      width: 90%;
+      max-width: 1200px;
+      padding: 40px;
+      background-color: white;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    /* Title */
+    h1 {
+      font-size: 3rem;
+      color: #333;
+      margin-bottom: 40px;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      animation: fadeIn 1s ease-out;
+    }
+
+    /* Flex container for image row */
+    .image-row {
+      display: flex;
+      justify-content: space-around;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+    }
+
+    /* Individual project image styling */
+    .image-card {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .image-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    /* Image hover effect */
+    .image-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .image-card:hover img {
+      transform: scale(1.1);
+    }
+
+    /* Text under images */
+    .image-card .project-name {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+      background-color: rgba(0, 0, 0, 0.5);
+      width: 100%;
+      text-align: center;
+      padding: 5px 0;
+      opacity: 0;
+      animation: fadeInText 0.8s ease-out forwards;
+    }
+
+    /* Animation for text fade-in */
+    @keyframes fadeInText {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    /* Image hover text visibility */
+    .image-card:hover .project-name {
+      opacity: 1;
+    }
+
+    /* Second line of project images */
+    .second-row {
+      display: flex;
+      justify-content: space-around;
+      gap: 20px;
+    }
+
+    /* Hoverable Link Styling */
+    .project-link {
+      display: block;
+      margin-top: 15px;
+      padding: 10px;
+      background-color: #2575fc;
+      color: white;
+      border-radius: 30px;
+      text-decoration: none;
+      font-size: 16px;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .project-link:hover {
+      background-color: #6a11cb;
+      transform: scale(1.05);
+    }
+
+    /* Animation for page load */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Responsive design for smaller screens */
+    @media (max-width: 768px) {
+      .image-row {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .image-card {
+        width: 80%;
+        margin-bottom: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="dashboard-container">
+    <h1>Project Dashboard</h1>
+
+    <!-- First Row of Project Images -->
+    <div class="image-row">
+      <div class="image-card">
+        <img src="your-image-url1.jpg" alt="TahirGPT">
+        <div class="project-name">TahirGPT</div>
+        <a href="https://imtahirnaseer.github.io/TahirGPT/" class="project-link" target="_blank">View Project</a>
+      </div>
+      <div class="image-card">
+        <img src="your-image-url2.jpg" alt="Scientific Calculator">
+        <div class="project-name">Scientific Calculator</div>
+        <a href="https://imtahirnaseer.github.io/Scientific-Calculator/" class="project-link" target="_blank">View Project</a>
+      </div>
+      <div class="image-card">
+        <img src="your-image-url3.jpg" alt="Tic-Tac-Toe">
+        <div class="project-name">Tic-Tac-Toe</div>
+        <a href="https://github.com/imtahirnaseer/Tic-Tac-Toe/" class="project-link" target="_blank">View Project</a>
+      </div>
+      <div class="image-card">
+        <img src="your-image-url4.jpg" alt="To-Do List">
+        <div class="project-name">To-Do List</div>
+        <a href="https://imtahirnaseer.github.io/To-Do-List/" class="project-link" target="_blank">View Project</a>
+      </div>
+    </div>
+
+    <!-- Second Row of Project Images -->
+    <div class="second-row">
+      <div class="image-card">
+        <img src="your-image-url5.jpg" alt="Code Visualizer">
+        <div class="project-name">Code Visualizer</div>
+        <a href="https://imtahirnaseer.github.io/Code-Visualizer/" class="project-link" target="_blank">View Project</a>
+      </div>
+      <div class="image-card">
+        <img src="your-image-url6.jpg" alt="Password Generator">
+        <div class="project-name">Password Generator</div>
+        <a href="https://imtahirnaseer.github.io/Password-Generator/" class="project-link" target="_blank">View Project</a>
+      </div>
+      <div class="image-card">
+        <img src="your-image-url7.jpg" alt="Snake Game">
+        <div class="project-name">Snake Game</div>
+        <a href="https://github.com/imtahirnaseer/Snake-Game.jk" class="project-link" target="_blank">View Project</a>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
