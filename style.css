@@ -211,7 +211,7 @@ html, body{
     height: calc(100vh - 11vh);
     width: 100%;
     margin-top: 14px;
-    background: black;
+    background: rgb(41, 52, 57);
 }
 .dashed-img{
     position: absolute;
@@ -259,8 +259,8 @@ html, body{
 }
 .imgPosition {
     position: fixed;
-    top: 64%;
-    left: 80%;
+    top: 44%;
+    left: 90%;
     transform: translate(-50%, -50%);
     height: 420px;
     width: 300px;
@@ -571,7 +571,8 @@ h1.logotext {
     top: 13px;
     height: 87.5vh;
     width: 89%;
-    background: black;
+    background: var(--body-color);
+    box-shadow: var(--box-shadow);
     border-radius: 12px;
     margin: 0 auto;
     overflow: hidden;
@@ -701,7 +702,7 @@ h1.logotext {
     top: 13px;
     width: 89%;
     height: 87.5vh;
-    background: black;
+    background: var(--body-color);
     margin: auto;
     border-radius: 12px;
     overflow: hidden;
