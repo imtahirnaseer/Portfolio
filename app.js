@@ -77,7 +77,7 @@ navLinks.forEach((link) => {
       });
 
 var typed = new Typed('#animee', {
-        strings: ['Web Developer', 'Coursera Certified', 'Digital Creator', 'Blogger','Computer Engineer','Cybersecurity Engineer',],
+        strings: ['Web Developer', 'Coursera Certified', 'Digital Creator', 'Blogger','UnStop Certified','Computer Engineer','Cybersecurity Engineer','GUVI Certified',],
         typeSpeed: 80,
         loop: true,
       });
