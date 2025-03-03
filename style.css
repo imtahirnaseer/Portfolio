@@ -572,7 +572,7 @@ h1.logotext {
     height: 87.5vh;
     width: 89%;
     background: var(--body-color);
-    box-shadow: var(--box-shadow);
+    box-shadow: var( --text-color);
     border-radius: 12px;
     margin: 0 auto;
     overflow: hidden;
@@ -582,7 +582,7 @@ h1.logotext {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: var(--main-text-color);
+    color: var( --text-color);
     font-size: 55px;
     text-transform: uppercase;
     font-weight: 900;
@@ -592,7 +592,7 @@ h1.logotext {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    box-shadow: 0 0 91px 86px black;
+    box-shadow: 0 0 91px 86px rgb(250, 249, 249);
 }
 .skills-icons-wrapper{
     position: absolute;
@@ -622,7 +622,7 @@ h1.logotext {
     background: white; 
     padding: 11px;
     border-radius: 9px;
-    fill: black;
+    fill: rgb(245, 244, 244);
 }
 .js-anim{
     position: absolute;
@@ -857,11 +857,11 @@ footer a{
 a.backTotop-icon{
     cursor: pointer;
     padding: 12px;
-    background: #1d1d1f;
+    background: #707099;
     border-radius: 6px;
 }
 .dark-Mode .backTotop-icon{
-    background: #1d1d1f;
+    background: #8c8cb4;
 }
 .backTotop svg{
     transform: rotate(90deg);
@@ -925,7 +925,7 @@ a.backTotop-icon{
     }
     
     80% {
-        box-shadow: 0 0 0 3px rgb(125 125 125 / 6%);
+        box-shadow: 0 0 0 3px rgba(35, 34, 34, 0.06);
         height: 550px;
         width: 550px;
     }
@@ -1249,16 +1249,6 @@ a.backTotop-icon{
         transform:scaleX(1);
         transform-origin:bottom left
 }
-
-
-
-
-
-
-
-
-
-
 
 .card {
     position: relative;
